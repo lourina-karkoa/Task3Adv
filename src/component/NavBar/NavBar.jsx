@@ -56,7 +56,7 @@ export default function Navbar() {
       <div className='lk-nav-new'>
       <div className='lk-nav-s-o'>
         <ul className='lk-nav-ul'> 
-          <li><Link to={'/Task3Adv/'} className='lk-nav-li-link'>Home</Link> </li>
+          <li><Link to={'/Task3Adv'} className='lk-nav-li-link'>Home</Link> </li>
           <li><Link to={'/Task3Adv/properties'} className='lk-nav-li-link'>Properties</Link></li>
           <li><Link to={'/Task3Adv/property'} className='lk-nav-li-link'>Property Detalis</Link></li>
           <li><Link to={'/Task3Adv/contact'} className='lk-nav-li-link'>Contact US</Link></li>
@@ -73,7 +73,7 @@ export default function Navbar() {
       <div className={bars ? 'lk-nav-hamburger' : 'lk-nav-hamburger-false'}>
  
         <ul className='lk-nav-hamburger-ul'> 
-          <li><Link to={'/Task3Adv/'} className='lk-nav-li-link'>Home</Link> </li>
+          <li><Link to={'/Task3Adv'} className='lk-nav-li-link'>Home</Link> </li>
           <li><Link to={'/Task3Adv/properties'} className='lk-nav-li-link'>Properties</Link></li>
           <li><Link to={'/Task3Adv/property'} className='lk-nav-li-link'>Property Detalis</Link></li>
           <li><Link to={'/Task3Adv/contact'} className='lk-nav-li-link'>Contact US</Link></li>

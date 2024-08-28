@@ -12,7 +12,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path='/Task3Adv/' element={<Home />} />
+      <Route path='/Task3Adv' element={<Home />} />
       <Route path='/Task3Adv/properties' element={<Properties />} />
       <Route path='/Task3Adv/property' element={<PropertyDetalis />} />
       <Route path='/Task3Adv/contact' element={<ContactUs />} />
