@@ -1,0 +1,58 @@
+.HeroCommon{
+    width: 100%;
+    height: calc(100vh - 170px);
+    background-image: url(./../../assets/img/hero.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.HeroCommon-Box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    font-family: "Poppins", sans-serif;
+}
+.HeroCommon-h2{
+    width: max-content;
+    padding: 0 25px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: white;
+    color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.HeroCommon-h1{
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+@media(max-width:1200px){
+    .HeroCommon-h1{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .HeroCommon-h2{
+        padding: 0 20px;
+    }
+}
+@media(max-width:768px){
+    .HeroCommon-h1{
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .HeroCommon-h2{
+        padding: 0 15px;
+    }
+}

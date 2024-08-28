@@ -1,0 +1,19 @@
+.lk-cards{
+    width: 100%;
+    padding: 100px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+}
+@media(max-width:1200px){
+    .lk-cards{
+        padding: 50px 80px;
+    }
+}
+@media(max-width:768px){
+    .lk-cards{
+        padding: 40px 40px;
+    }
+}

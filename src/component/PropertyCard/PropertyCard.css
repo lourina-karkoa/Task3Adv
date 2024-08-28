@@ -1,0 +1,63 @@
+
+.PropertyCard{
+    width: 100%;
+}
+.lk-descrip-part-TH{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:center;
+    gap: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    width: 250px;
+    padding: 0 20px;
+}
+.lk-descrip-Box{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-bottom: 1px solid #eeeeee;
+    gap: 20px;
+    height: 100px;
+}
+.lk-descrip-Box:nth-child(4)::after{
+   border-bottom: none;
+}
+.lk-descrip-Box-o{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.lk-descrip-Box-p,.lk-descrip-Box-span{
+    opacity: 0.5;
+}
+.lk-descrip-Box-h2{
+    font-size: 22px;
+    font-weight: 600;
+}
+@media(max-width:1200px){
+    .lk-descrip-part-TH{
+        width: 100%;
+    }
+    .lk-descrip-Box{
+        width: 100%;
+        justify-content: start;
+        gap: 35px;
+        
+    }
+}
+@media(max-width:992px){
+    /* .lk-descrip-Box {
+        gap: 0px;
+        padding: 0 40px;
+    } */
+}
+@media(max-width:768px){
+    .lk-descrip-part-TH{
+        width: 100%;
+       }
+    
+}

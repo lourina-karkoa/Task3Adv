@@ -1,0 +1,58 @@
+.lk-Title-common{
+    font-family:  "Poppins", sans-serif;
+}
+.lk-contact-title{
+    margin-top: -170px;
+}
+.lk-contact-img-h2-color{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #1e1e1e;
+    width: 330px;
+    margin-top: 20px;
+}
+.lk-contact-img-h3{
+    color: #ee626b;
+    font-weight: 700;
+    text-align: center;
+}
+.h3-start{
+    text-align:start !important;
+}
+.lk-contact-img-h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    color: white;
+    width: 330px;
+    text-align: center;
+    margin-top: 20px;
+}
+@media(max-width:1200px){
+    .lk-contact-img-h2{
+        width: 285px;
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .lk-contact-img-h2-color{
+        width: 280px;
+        font-size: 35px;
+        line-height: 45px;
+    }
+}
+@media(max-width:992px){
+    .lk-contact-img-h2-color{
+        width: 100%;
+    }
+}
+@media(max-width:768px){
+    .lk-contact-img-h2,.lk-contact-img-h2-color{
+        font-size: 30px;
+        font-weight: 500;
+        width: 250px;
+        line-height: 35px;
+        margin-top: 10px;
+    }
+    
+}

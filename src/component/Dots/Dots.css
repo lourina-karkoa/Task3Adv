@@ -1,0 +1,38 @@
+.all-dots{
+    width: 100%;
+    height: 7%;
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    gap: 7px;
+    /* left: 9%; */
+    bottom: -40px;
+    z-index: 200;
+    padding: 0 120px;
+}
+.dot{
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.4 ease-in-out;
+}
+.active-dot,.dot:hover{
+    height: 13px;
+    width: 13px;
+    cursor: pointer;
+    border-radius: 50%;
+    color:#f35525 !important;
+    transition: all 0.4 ease-in-out;
+}
+@media(max-width:1200px){
+    .all-dots{
+        padding: 0 80px;
+    }
+}
+@media(max-width:768px){
+    .all-dots{
+        padding: 0 40px;
+    }
+}

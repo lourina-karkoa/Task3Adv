@@ -1,0 +1,88 @@
+.lk-descrip{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 100px 120px;
+    font-family: "Poppins", sans-serif;
+    flex-wrap: wrap;
+}
+.lk-descrip-part-o{
+    height: 400px;
+    width: 300px;
+    background-image: url(./../../assets/img/featured.jpg);
+    background-size:cover ;
+    background-position: center center;
+    position: relative;
+    margin-left:40px ;
+}
+.lk-descrip-f-img{
+    display: flex;
+    align-items: end;
+    justify-content:start;
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+    background-color: #f35525;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.lk-descrip-part-T{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:start;
+    gap: 40px;
+    width: 37%;
+}
+.lk-descrip-s-img{
+   background-color: #f35525;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+@media(max-width:1200px){
+    .lk-descrip-Proerty-card{
+        width: 50%;
+    }
+    .lk-descrip {
+        justify-content: space-between;
+        row-gap:  60px;
+        column-gap: 30px;
+        padding: 70px 80px;
+    }
+    .lk-descrip-part-o{
+        width: 45%;
+        height: 470px;
+    }
+    .lk-descrip-part-T{
+        width: 45%;
+    }
+}
+@media(max-width:992px){
+    .lk-descrip-Proerty-card{
+        width: 100%;
+    }
+    .lk-descrip-part-o{
+        width: 100%;
+        height: 600px;
+    }
+    .lk-descrip-part-T{
+        gap: 20px;
+        width: 100%;
+    }
+}
+@media(max-width:768px){
+    .lk-descrip{
+        gap: 40px;
+    }
+   .lk-descrip{
+    padding: 50px 40px;
+   }
+   .lk-descrip-part-o{
+    height: 400px;
+   }
+}

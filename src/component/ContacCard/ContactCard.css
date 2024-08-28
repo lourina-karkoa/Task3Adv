@@ -1,0 +1,64 @@
+.ContactCard-ContactUs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+.ContactCard-ContactUs-added{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+.ContactCard-ContactUs-added .lk-contactUs-card-s{
+    width: 350px;
+    height: 110px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 40px;
+    gap: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: "Poppins", sans-serif;
+
+}
+.ContactCard-ContactUs .lk-contactUs-card-s{
+    width: 275px;
+    height: 110px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: "Poppins", sans-serif;
+}
+.lk-contact-info-h4{
+    color: #1e1e1e;
+    font-size: 20px;
+    font-weight:600;
+}
+.lk-contact-info-h5{
+    color: #aaaaaa;
+    font-weight: 400;
+}
+@media(max-width:1200px){
+    .lk-contactUs-card-s{
+        width: 350px !important;
+        justify-content: space-between !important;
+        padding: 0 40px !important;
+    }
+}
+@media(max-width:768px){
+    .lk-contactUs-card-s,.ContactCard-ContactUs-added .lk-contactUs-card-s {
+        width: 260px !important;
+        padding: 0 0px !important;
+        justify-content: center !important;
+    }
+}

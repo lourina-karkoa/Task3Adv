@@ -1,0 +1,20 @@
+.lk-contact-form-button{
+    background-color: #1e1e1e;
+    color:white;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+    margin-top: 15px;
+    font-family: "Poppins", sans-serif;
+    transition: 0.4s;
+    border: none;
+}
+.lk-contact-form-button:hover{
+    background-color: #f35525;
+    color: white;
+    transition: 0.4s;
+    border: none;
+
+}

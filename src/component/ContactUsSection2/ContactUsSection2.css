@@ -1,0 +1,67 @@
+.ContactUsSection2{
+    width: 100%;
+    padding: 0 120px;
+    margin: 100px 0;
+}
+.ContactUsSection2-part{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 100px;
+    column-gap: 6px;
+    row-gap: 50px;
+    flex-wrap: wrap;
+}
+.ContactUsSection2-part-one{
+    /* width: 49%; */
+    width: 550px;
+    min-width: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 40px;
+}
+.ContactUsSection2-p{
+    font-size: 14px;
+    line-height: 28px;
+    color: #4a4a4a;
+    font-family: "Poppins", sans-serif;
+}
+.ContactUsSection2-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.ContactUsSection2-part-two{
+    width: 46%;
+}
+.ContactUsSection2-ifram{
+    width: 100%;
+}
+@media(max-width:1200px){
+    .ContactUsSection2{
+        padding: 0 80px;
+        margin: 50px 0;
+    }
+    .ContactUsSection2-part-one{
+        width: 49%;
+        min-width: 400px;
+    }
+    .ContactUsSection2-part{
+        margin-bottom: 50px;
+    }
+}
+@media(max-width:992px){
+    .ContactUsSection2-part-one,.ContactUsSection2-part-two{
+        width: 100%;
+        min-width: 100%;
+    }
+}
+@media(max-width:768px){
+    .ContactUsSection2{
+        padding: 0 40px;
+    }
+}
