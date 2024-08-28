@@ -61,4 +61,7 @@
         padding: 0 0px !important;
         justify-content: center !important;
     }
+    .ContactCard-ContactUs{
+        column-gap: 20px;
+    }
 }

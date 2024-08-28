@@ -166,4 +166,8 @@
     .lk-offer-son-t{
         gap: 30px;
     }
+    .lk-offer-o-t {
+        justify-content: start;
+
+    }
 }
