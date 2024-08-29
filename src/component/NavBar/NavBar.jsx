@@ -1,12 +1,18 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faCalendar, faEnvelope, faMap } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faEnvelope, faMap } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin'
-import './NavBar.css'
+import {dataNavBar} from './../../data/DataNavbar'
 import Button from '../Button/Button'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+import './NavBar.css'
 export default function Navbar() {
+
+  const dataNavIcon =[{id:'1',icon:faFacebook},{id:'2',icon:faTwitter},{id:'3',icon:faLinkedin},{id:'4',icon:faInstagram}]
+  const titleWebSite ='VILLA';
+  const dataNavTempr =[{id:'1',icon:faEnvelope,to:'#',link:'info@company.com'},{id:'2',icon:faMap,to:'##',link:'Sunny Isles Beach, FL 33160'}]
+
   const [bars,setBars] =useState(false)
   const [stylenav ,setStylenav]=useState(false)
   function ChangeStyle() {
@@ -17,71 +23,73 @@ export default function Navbar() {
       }
   }
   window.addEventListener('scroll', ChangeStyle);
+ 
   return (
     <nav className='LK-Father-Nav'>
       <div className='lk-Nav-desktop'>
       <div className='LK-nav'>
         <div className='LK-son-O'>
-            <div className='lk-Son-O-O'>
-            <FontAwesomeIcon  className='lk-Son-O-O-icon' icon={faEnvelope} />
-            <a href='/' >info@company.com</a>
+          {dataNavTempr.map((item)=>{
+            return(
+              <div className='lk-Son-O-O' key={item.id}>
+              <FontAwesomeIcon  className='lk-Son-O-O-icon' icon={item.icon}/>
+              <Link to={item.to} className='lk-nav-par-O'>{item.link}</Link>
             </div>
-        <div className='lk-Son-O-T'>
-        <FontAwesomeIcon  className='lk-Son-O-O-icon' icon={faMap} />
-        <p className='lk-nav-par-O'>
-        Sunny Isles Beach, FL 33160
-        </p>
-        </div>
+            )
+          })}
         </div>
 
 
         <div className='LK-son-T'>
-            <div className='lk-son-T-O'>
-            <FontAwesomeIcon className='lk-son-T-icon' icon={faFacebook} />
-            </div>
-            <div className='lk-son-T-O'>
-            <FontAwesomeIcon className='lk-son-T-icon' icon={faTwitter} />
-            </div>
-            <div className='lk-son-T-O'>
-            <FontAwesomeIcon className='lk-son-T-icon' icon={faLinkedin} />
-            </div>
-            <div className='lk-son-T-O'>
-            <FontAwesomeIcon className='lk-son-T-icon' icon={faInstagram} />
-            </div>
+          {dataNavIcon.map((item)=>{
+            return(
+              <div className='lk-son-T-O' key={item.id}>
+               <FontAwesomeIcon className='lk-son-T-icon' icon={item.icon}/>
+              </div>
+            )
+          })}
         </div>
-    </div>
-    <div className={stylenav  ? 'LK-NAV-Secound-Scroll': 'LK-NAV-Secound'}>
-      <h1 className='LK-NAV-Secound-h1'>VILLA</h1>
-      <FontAwesomeIcon onClick={()=>{setBars(!bars)}} className='lk-hamburger-icon' icon={faBars} />
-      <div className='lk-nav-new'>
-      <div className='lk-nav-s-o'>
-        <ul className='lk-nav-ul'> 
-          <li><Link to={'/Task3Adv'} className='lk-nav-li-link'>Home</Link> </li>
-          <li><Link to={'/Task3Adv/properties'} className='lk-nav-li-link'>Properties</Link></li>
-          <li><Link to={'/Task3Adv/property'} className='lk-nav-li-link'>Property Detalis</Link></li>
-          <li><Link to={'/Task3Adv/contact'} className='lk-nav-li-link'>Contact US</Link></li>
-        </ul>
-       
       </div>
-      <Button something={false} />
+      <div className={stylenav  ? 'LK-NAV-Secound-Scroll': 'LK-NAV-Secound'}>
+        <h1 className='LK-NAV-Secound-h1'>{titleWebSite}</h1>
+        <FontAwesomeIcon onClick={()=>{setBars(!bars)}} className='lk-hamburger-icon' icon={faBars} />
+        <div className='lk-nav-new'>
+           <div className='lk-nav-s-o'>
+             <ul className='lk-nav-ul'> 
+               {dataNavBar.map((item)=>{
+                  return(
+                    <li key={item.id}>
+                       <NavLink to={item.path}
+                       className={({ isActive })=>{
+                       return(isActive ? 'lk-nav-li-link-active' : 'lk-nav-li-link');
+                       }}>
+                      {item.title}
+                      </NavLink> 
+                    </li>
+                  )
+                 })}
+            </ul>
+           </div>
+       <Button something={false} />
+       </div>
+     </div>
       </div>
-    </div>
-
-      </div>
-
-
       <div className={bars ? 'lk-nav-hamburger' : 'lk-nav-hamburger-false'}>
- 
         <ul className='lk-nav-hamburger-ul'> 
-          <li><Link to={'/Task3Adv'} className='lk-nav-li-link'>Home</Link> </li>
-          <li><Link to={'/Task3Adv/properties'} className='lk-nav-li-link'>Properties</Link></li>
-          <li><Link to={'/Task3Adv/property'} className='lk-nav-li-link'>Property Detalis</Link></li>
-          <li><Link to={'/Task3Adv/contact'} className='lk-nav-li-link'>Contact US</Link></li>
+          {dataNavBar.map((item)=>{
+            return(
+              <li key={item.id}>
+                <NavLink to={item.path}
+                 className={({ isActive })=>{
+                return(isActive ? 'lk-nav-li-link-active' : 'lk-nav-li-link');
+                }}>
+                {item.title}
+                </NavLink>
+              </li>
+            )
+          })}
         </ul>
-       
-      </div>
-   
-    
+      </div> 
     </nav>
   )
 }

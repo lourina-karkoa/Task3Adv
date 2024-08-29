@@ -19,6 +19,10 @@
     margin-top: 100px;
     font-family: "Poppins", sans-serif;
 }
+.HeroCommon-link{
+    text-decoration: none;
+}
+
 .HeroCommon-h2{
     width: max-content;
     padding: 0 25px;

@@ -13,9 +13,9 @@ function App() {
   return (
     <Routes>
       <Route path='/Task3Adv' element={<Home />} />
-      <Route path='/Task3Adv/properties' element={<Properties />} />
-      <Route path='/Task3Adv/property' element={<PropertyDetalis />} />
-      <Route path='/Task3Adv/contact' element={<ContactUs />} />
+      <Route path='/properties' element={<Properties />} />
+      <Route path='/property' element={<PropertyDetalis />} />
+      <Route path='/contact' element={<ContactUs />} />
     </Routes>
     
   )
