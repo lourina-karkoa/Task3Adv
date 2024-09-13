@@ -1,5 +1,7 @@
 .lk-cards{
     width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
     padding: 100px 120px;
     display: flex;
     align-items: center;

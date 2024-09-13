@@ -7,6 +7,7 @@ import Offer from '../../component/Offer/Offer'
 import ContactUs from '../../component/ContactUs/ContactUs'
 import Footer from '../../component/Footer/Footer'
 import HomeCard from '../../component/HomeCard/HomeCard'
+import './Home.css'
 
 export default function Home() {
   return (

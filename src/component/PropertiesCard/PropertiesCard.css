@@ -1,6 +1,8 @@
 .lk-PropertiesCard{
-    margin: 100px 0;
+    margin: 100px auto;
     padding: 0 120px;
+    max-width: 1600px;
+    width: 100%;
 }
 .PropertiesCard-Buttons{
     width: 100%;

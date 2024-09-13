@@ -38,8 +38,6 @@ export default function Navbar() {
             )
           })}
         </div>
-
-
         <div className='LK-son-T'>
           {dataNavIcon.map((item)=>{
             return(
